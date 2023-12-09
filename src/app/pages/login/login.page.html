@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="degradado">
+    <ion-title><ion-img class="logo" src="assets/icon/logoduoc.png" > </ion-img></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"  class="ion-padding">
+  <div class="centrado">
+    <ion-img src="assets/icon/login2.png" class="imagen"></ion-img>
+    <br>
+    <ion-item class="input ">
+    <ion-input [(ngModel)]="mdl_usuario" label="Usuario" labelPlacement="floating" 
+    placeholder="ingrese su usuario"></ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top input">
+    <ion-input [(ngModel)]="mdl_contrasena" type="password" label="Contraseña" labelPlacement="floating" 
+    placeholder="ingrese su contraseña"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="login()" expand="block" class="degradado ion-margin-top boton"> Ingresar</ion-button>
+  
+  <ion-button  (click)="navegarCrearUsuario()" expand="block" class="degradado ion-margin-top boton" color="warning"> registrar usuario</ion-button>
+  </div>
+</ion-content>

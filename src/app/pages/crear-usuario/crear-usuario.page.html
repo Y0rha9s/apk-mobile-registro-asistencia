@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="degradado">
+    <ion-title>Nuevo usuario</ion-title>
+    <ion-back-button slot="start" defaultHref="/"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="centrado">
+    <ion-img src="assets/icon/r.png" class="imagenRegistro"></ion-img>
+
+  <ion-item class="input ion-margin-top">
+    <ion-input [(ngModel)]="mdl_usuario" label="Usuario" labelPlacement="floating" 
+    placeholder="ingrese su usuario"></ion-input>
+  </ion-item>
+
+  <ion-item class="input ion-margin-top">
+    <ion-input [(ngModel)]="mdl_contrasena" type="password" label="contrasena" labelPlacement="floating" 
+    placeholder="ingrese su contrasena"></ion-input>
+  </ion-item>
+
+  <ion-item class="input ion-margin-top">
+    <ion-input [(ngModel)]="mdl_correo" label="correo" labelPlacement="floating" 
+    placeholder="ingrese su correo"></ion-input>
+  </ion-item>
+
+  <ion-item class="input ion-margin-top">
+    <ion-input [(ngModel)]="mdl_nombre" label="nombre" labelPlacement="floating" 
+    placeholder="ingrese su nombre"></ion-input>
+  </ion-item>
+
+  <ion-item class="input ion-margin-top">
+    <ion-input [(ngModel)]="mdl_apellido" label="apellido" labelPlacement="floating" 
+    placeholder="ingrese su apellido"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="almacenarUsuario()" class="degradado boton ion-margin-top" expand="block">registrar</ion-button>
+  </div>
+</ion-content>

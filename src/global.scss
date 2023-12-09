@@ -1,0 +1,101 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+.degradado {
+    --background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,97,9,1) 73%, rgba(213,255,0,1) 100%);
+    --color: #ffffff;
+}
+
+.input{
+    border: solid 3px #ff9100;
+    border-radius: 6px;
+}
+
+.boton{
+    height: 45px;
+}
+.imagen {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagenRegistro {
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagenb {
+    width: 85vw;
+    max-width: 50px;
+    min-width: 220px;
+    margin: 115px;
+}
+.logo{
+    width: 75%;
+    height: 50%;
+    margin: auto;
+}
+
+*,*:after, *:before{
+    margin: 0;
+    padding: 0;
+}
+.contcarga{
+    background-color: rgba(250,240,245,0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-tra: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+.carga{
+    border: 15px solid #ccc;
+    border-top-color: #f4ea26;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+@keyframes girar{
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}

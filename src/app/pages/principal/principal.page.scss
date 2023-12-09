@@ -1,0 +1,24 @@
+.tabla-asistencia {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabla-asistencia th,
+  .tabla-asistencia td {
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .tabla-asistencia th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    
+  }
+  @media (max-width: 480px) {
+    .tabla-asistencia th:first-child,
+    .tabla-asistencia td:first-child {
+      width: 40%;
+    }
+  }
